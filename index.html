@@ -4,51 +4,89 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Chocolate</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./css/styles.css" />
   </head>
   <body>
-    <header>
-      <nav>
-        <a href=""
-          >SIMPLY CHOCOLATE
+    <header class="header">
+      <nav class="header-navigation">
+        <a class="header-logo link" href=""
+          ><span class="header-logo-italic">SIMPLY</span> CHOCOLATE
           <img src="./images/chocolate-icon.svg" alt="site logo"
         /></a>
-        <ul>
-          <li><a href="">Home</a></li>
-          <li><a href="">How it’s made?</a></li>
-          <li><a href="">Chocolate is loved</a></li>
+        <ul class="header-menu-list list">
+          <li class="header-menu-item">
+            <a class="header-menu-link link" href="">Home</a>
+          </li>
+          <li class="header-menu-item">
+            <a class="header-menu-link link" href="">How it’s made?</a>
+          </li>
+          <li class="header-menu-item">
+            <a class="header-menu-link link" href="">Chocolate is loved</a>
+          </li>
         </ul>
       </nav>
-      <ul>
-        <li><a href="" target="_blank" rel="noopener noreferrer">insta</a></li>
-        <li><a href="" target="_blank" rel="noopener noreferrer">fb</a></li>
-        <li><a href="" target="_blank" rel="noopener noreferrer">twit</a></li>
+      <ul class="header-soc-list list">
+        <li class="header-soc-item">
+          <a
+            class="header-soc-link link"
+            href=""
+            target="_blank"
+            rel="noopener noreferrer"
+            >insta</a
+          >
+        </li>
+        <li class="header-soc-item">
+          <a
+            class="header-soc-link link"
+            href=""
+            target="_blank"
+            rel="noopener noreferrer"
+            >fb</a
+          >
+        </li>
+        <li class="header-soc-item">
+          <a
+            class="header-soc-link link"
+            href=""
+            target="_blank"
+            rel="noopener noreferrer"
+            >twit</a
+          >
+        </li>
       </ul>
     </header>
     <main>
-      <section>
-        <h1>
+      <section class="hero">
+        <h1 class="hero-title">
           Treat yourself or a loved one to our finest ingredients for a moment
           of pure delight!
         </h1>
-        <button type="button">Buy now</button>
-        <a href="#made">How it’s made</a>
-        <a href="#footer">scroll down</a>
+        <button type="reset" class="hero-btn">Buy now</button>
+        <a href="#made" class="hero-link-btn link">How it’s made</a>
+        <a href="#footer" class="hero-down-btn link">scroll down</a>
       </section>
-      <section>
-        <h2 hidden>Advantages</h2>
-        <ul>
-          <li>
-            <h3>Unsurpassed taste</h3>
-            <p>
+
+      <section class="advantages">
+        <h2 class="visually-hidden">Advantages</h2>
+        <ul class="advantages-list list">
+          <li class="advantages-item">
+            <h3 class="advantages-subtitle">Unsurpassed taste</h3>
+            <p class="advantages-item-text">
               Crafted with the finest quality cocoa beans and a dedication to
               perfection, each bite is a decadent experience that simply cannot
               be matched. Savor the richness and complexity of our Unsurpassed
               Taste and discover a new level of chocolate bliss.
             </p>
           </li>
-          <li>
-            <h3>Affordable price</h3>
-            <p>
+          <li class="advantages-item">
+            <h3 class="advantages-subtitle">Affordable price</h3>
+            <p class="advantages-item-text">
               Indulge in high-quality chocolate without breaking the bank with
               Simply Chocolate's selection of affordable treats. Enjoy
               mouth-watering truffles and velvety chocolate bars without
@@ -59,9 +97,9 @@
               each piece, our attention to detail is evident in every bite.
             </p>
           </li>
-          <li>
-            <h3>Own production</h3>
-            <p>
+          <li class="advantages-item">
+            <h3 class="advantages-subtitle">Own production</h3>
+            <p class="advantages-item-text">
               We take pride in our own production process, ensuring that every
               step is carefully crafted to perfection. From selecting the finest
               ingredients to handcrafting each piece, our attention to detail is
@@ -70,6 +108,7 @@
           </li>
         </ul>
       </section>
+
       <section>
         <h2>IT ALL ADDS UP TO ONE EXCEPTIONAL TASTE SENSATION</h2>
         <p>
@@ -157,28 +196,30 @@
         </b>
         <ul>
           <li>
-            <p>
+            <p class="text" title="my text" id="text">
               Heat the milk in a saucepan without bringing it to a boil. Add
               sugar and cocoa powder.
             </p>
           </li>
           <li>
-            <p>
+            <p class="text" title="my text" id="text1">
               At the same time, prepare a water bath. Melt the butter on it.
             </p>
           </li>
           <li>
-            <p>
+            <p class="text" title="my text" id="text2">
               "Mix" the milk mixture and already liquid butter. Mix thoroughly
               with a silicone spatula so that the mass becomes uniform and
               silky.
             </p>
           </li>
           <li>
-            <p>Heat the mixture over low heat, letting it barely boil.</p>
+            <p class="text" title="my text" id="text3">
+              Heat the mixture over low heat, letting it barely boil.
+            </p>
           </li>
           <li>
-            <p>
+            <p class="text" title="my text" id="text4">
               Pour the chocolate into special containers (can be replaced with
               ice molds). Allow to cool and harden.
             </p>
