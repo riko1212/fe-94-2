@@ -5,7 +5,7 @@
 */
 :root {
   /* Fonts */
-  --primary-font: "Montserrat", sans-serif;
+  --primary-font: 'Montserrat', sans-serif;
   /* Colors */
   --main-cl: #111111;
   --main-cl-60: rgba(17, 17, 17, 0.6);
@@ -42,6 +42,25 @@ button {
 .list {
   list-style-type: none;
 }
+
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+ul,
+ol {
+  padding-left: 0;
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
 /* reset end */
 .visually-hidden {
   position: absolute;
@@ -62,6 +81,17 @@ button {
   | Components styles
   |============================
 */
+
+.container {
+  /* width: 1166px; */
+  width: 100%;
+  max-width: 1166px;
+  padding-left: 15px;
+  padding-right: 15px;
+  margin: 0 auto;
+  outline: 2px solid red;
+}
+
 .title {
   font-weight: 600;
   font-size: 24px;
@@ -106,6 +136,7 @@ button {
   color: var(--white-cl);
   background-color: var(--accent-cl);
 }
+
 /* Navigation */
 .navigation {
 }
@@ -153,6 +184,8 @@ button {
   |============================
 */
 .header {
+  padding-top: 24px;
+  padding-bottom: 32px;
 }
 .header-navigation {
 }
@@ -173,7 +206,13 @@ button {
   |============================
 */
 .hero {
+  padding-bottom: 80px;
+}
+
+.hero-wrap {
   background-color: var(--main-cl-60);
+  border-radius: 30px;
+  padding: 380px 40px 40px 40px;
 }
 .hero-title {
   color: var(--white-cl);
@@ -181,6 +220,8 @@ button {
   font-weight: 500;
   line-height: 1.21;
   letter-spacing: -0.03em;
+  max-width: 484px;
+  margin-bottom: 32px;
 }
 .hero-btn {
   color: var(--white-cl);
@@ -207,9 +248,13 @@ button {
 */
 .advantages {
   background-color: var(--violet-cl);
+  /* background-image: linear-gradient(var(--violet-cl) 50%, gray 50%); */
+  padding-top: 50px;
+  padding-bottom: 50px;
 }
 
 .advantages-list {
+  padding: 0 18px;
 }
 .advantages-item {
 }
@@ -217,6 +262,7 @@ button {
   color: var(--white-cl);
   font-size: 18px;
   font-weight: 600;
+  margin-bottom: 18px;
 }
 .advantages-item-text {
   color: var(--white-cl-70);
@@ -230,8 +276,23 @@ button {
   |============================
 */
 .ingridients {
+  padding-top: 120px;
 }
 .ingridients-title {
+  max-width: 412px;
+  margin: 0 auto;
+  margin-bottom: 28px;
+}
+
+.ingridients-text {
+  color: #111;
+  text-align: center;
+  font-size: 14px;
+  line-height: 1.29;
+  letter-spacing: -0.02em;
+  max-width: 486px;
+  margin: 0 auto;
+  margin-bottom: 50px;
 }
 .ingridients-list {
 }
@@ -252,8 +313,10 @@ button {
   |============================
 */
 .made {
+  padding-top: 120px;
 }
 .made-title {
+  margin-bottom: 50px;
 }
 .made-left-side {
 }
@@ -266,10 +329,13 @@ button {
   font-weight: 600;
   font-size: 18px;
   line-height: 1.33;
+  margin-bottom: 28px;
+  display: inline-block;
 }
 .made-list {
 }
-.made-item {
+.made-item:not(:last-child) {
+  margin-bottom: 24px;
 }
 .made-text {
   font-size: 14px;
@@ -282,13 +348,19 @@ button {
   |============================
 */
 .products {
+  padding-top: 120px;
 }
 .products-title {
+  margin-bottom: 50px;
 }
 .products-list {
 }
 .products-item {
   background-color: var(--white-cl);
+  padding: 32px 20px;
+  border-radius: 15px;
+  border: 1px solid rgba(17, 17, 17, 0.1);
+  background: #fff;
 }
 .products-pic {
 }
@@ -319,15 +391,23 @@ button {
   |============================
 */
 .bestsellers {
+  padding-top: 120px;
 }
 .bestsellers-title {
+  margin-bottom: 50px;
 }
 .bestsellers-list {
 }
 .bestsellers-item {
   background-color: var(--white-cl);
+  border-radius: 0px 0px 15px 15px;
+  border-right: 1px solid rgba(17, 17, 17, 0.1);
+  border-bottom: 1px solid rgba(17, 17, 17, 0.1);
+  border-left: 1px solid rgba(17, 17, 17, 0.1);
+  padding-bottom: 28px;
 }
 .bestsellers-picture {
+  margin-bottom: 28px;
 }
 .bestsellers-name {
   font-weight: 600;
@@ -335,6 +415,7 @@ button {
   line-height: 1.33;
   letter-spacing: -0.02em;
   text-transform: uppercase;
+  text-align: center;
 }
 /**
   |============================
@@ -342,12 +423,20 @@ button {
   |============================
 */
 .reviews {
+  padding-top: 120px;
+  padding-bottom: 120px;
 }
 .reviews-title {
+  margin-bottom: 90px;
 }
 .reviews-list {
+  margin-bottom: 50px;
 }
 .reviews-item {
+  border-radius: 15px;
+  border: 1px solid rgba(17, 17, 17, 0.1);
+  background: #fff;
+  box-shadow: 0px 9.049315452575684px 100px 0px rgba(17, 17, 17, 0.03);
 }
 .reviews-avatar {
 }
@@ -356,6 +445,7 @@ button {
   font-size: 18px;
   line-height: 1.33;
   text-align: center;
+  margin-bottom: 24px;
 }
 .reviews-text {
   font-size: 14px;
@@ -366,6 +456,8 @@ button {
   color: var(--main-cl-70);
 }
 .reviews-btn {
+  display: block;
+  margin: 0 auto;
 }
 /**
   |============================
@@ -374,6 +466,8 @@ button {
 */
 .footer {
   background-color: var(--violet-cl);
+  padding-top: 50px;
+  padding-bottom: 50px;
 }
 .footer-top {
 }
@@ -383,10 +477,15 @@ button {
   line-height: 1.21;
   letter-spacing: -0.02em;
   color: var(--white-cl);
+  max-width: 300px;
 }
 .footer-socials {
 }
 .footer-contancts {
+}
+
+.socials-caption {
+  margin-bottom: 14px;
 }
 .contacts {
 }
@@ -395,6 +494,7 @@ button {
   font-size: 14px;
   line-height: 1.29;
   text-align: center;
+  margin-bottom: 14px;
 
   color: var(--white-cl);
 }
@@ -403,7 +503,8 @@ button {
 }
 .contacts-list {
 }
-.contacts-item {
+.contacts-item:not(:last-child) {
+  margin-bottom: 4px;
 }
 .contacts-link {
   font-size: 14px;
