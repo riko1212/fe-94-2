@@ -28,11 +28,15 @@
   </head>
   <body>
     <header class="header" id="home">
-      <div class="container">
+      <div class="container header-container">
         <nav class="header-navigation navigation">
           <a class="header-logo link" href="">
             <span class="header-logo-italic">SIMPLY</span> CHOCOLATE
-            <img src="./images/chocolate-icon.svg" alt="site logo" />
+            <img
+              src="./images/chocolate-icon.svg"
+              class="logo-icon"
+              alt="site logo"
+            />
           </a>
           <ul class="navigation-menu list">
             <li class="navigation-item">
@@ -92,9 +96,13 @@
               Treat yourself or a loved one to<br />
               our finest ingridients for a moment of pure delight!
             </h1>
-            <button class="hero-btn btn" type="button">Buy now</button>
-            <a class="btn btn-primary link" href="#made">How it’s made</a>
-            <a class="hero-down-btn link" href="#footer">scroll down</a>
+            <div class="hero-buttons">
+              <button class="hero-btn btn" type="button">Buy now</button>
+              <a class="btn btn-primary link" href="#made">How it’s made</a>
+              <a class="hero-down-btn link" href="#footer"
+                >scroll down <span class="hero-down-icon"></span
+              ></a>
+            </div>
           </div>
         </div>
       </section>
@@ -119,11 +127,7 @@
                 Simply Chocolate's selection of affordable treats. Enjoy
                 mouth-watering truffles and velvety chocolate bars without
                 sacrificing taste or quality. Browse our selection and indulge
-                in affordable luxury today. We take pride in our own production
-                process, ensuring that every step is carefully crafted to
-                perfection. From selecting the finest ingridients to
-                handcrafting each piece, our attention to detail is evident in
-                every bite.
+                in affordable luxury today.
               </p>
             </li>
             <li class="advantages-item">
@@ -231,51 +235,54 @@
           <h2 class="made-title title">
             hOW IT’S <span class="title-accent">made</span>?
           </h2>
-          <div class="made-left-side">
-            <img
-              class="made-img"
-              src="./images/made-img.jpeg"
-              alt="liquid chocolate"
-              width="600"
-              height="400"
-            />
-          </div>
-          <div class="made-right-side">
-            <b class="made-subtitle">
-              Try our chocolates today and discover the perfect balance of
-              flavor
-            </b>
-            <ul class="made-list list">
-              <li class="made-item">
-                <p class="made-text" title="my text">
-                  Heat the milk in a saucepan without bringing it to a boil. Add
-                  sugar and cocoa powder.
-                </p>
-              </li>
-              <li class="made-item">
-                <p class="made-text" title="my text">
-                  At the same time, prepare a water bath. Melt the butter on it.
-                </p>
-              </li>
-              <li class="made-item">
-                <p class="made-text" title="my text" id="text2">
-                  "Mix" the milk mixture and already liquid butter. Mix
-                  thoroughly with a silicone spatula so that the mass becomes
-                  uniform and silky.
-                </p>
-              </li>
-              <li class="made-item">
-                <p class="made-text" title="my text">
-                  Heat the mixture over low heat, letting it barely boil.
-                </p>
-              </li>
-              <li class="made-item">
-                <p class="made-text" title="my text">
-                  Pour the chocolate into special containers (can be replaced
-                  with ice molds). Allow to cool and harden.
-                </p>
-              </li>
-            </ul>
+          <div class="made-wrap">
+            <div class="made-left-side">
+              <img
+                class="made-img"
+                src="./images/made-img.jpeg"
+                alt="liquid chocolate"
+                width="600"
+                height="400"
+              />
+            </div>
+            <div class="made-right-side">
+              <b class="made-subtitle">
+                Try our chocolates today and discover the perfect balance of
+                flavor
+              </b>
+              <ul class="made-list list">
+                <li class="made-item">
+                  <p class="made-text" title="my text">
+                    Heat the milk in a saucepan without bringing it to a boil.
+                    Add sugar and cocoa powder.
+                  </p>
+                </li>
+                <li class="made-item">
+                  <p class="made-text" title="my text">
+                    At the same time, prepare a water bath. Melt the butter on
+                    it.
+                  </p>
+                </li>
+                <li class="made-item">
+                  <p class="made-text" title="my text" id="text2">
+                    "Mix" the milk mixture and already liquid butter. Mix
+                    thoroughly with a silicone spatula so that the mass becomes
+                    uniform and silky.
+                  </p>
+                </li>
+                <li class="made-item">
+                  <p class="made-text" title="my text">
+                    Heat the mixture over low heat, letting it barely boil.
+                  </p>
+                </li>
+                <li class="made-item">
+                  <p class="made-text" title="my text">
+                    Pour the chocolate into special containers (can be replaced
+                    with ice molds). Allow to cool and harden.
+                  </p>
+                </li>
+              </ul>
+            </div>
           </div>
         </div>
       </section>
