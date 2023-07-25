@@ -223,6 +223,16 @@ img {
 .header-socials {
 }
 
+.socials-icon {
+  fill: transparent;
+  stroke: #111111;
+}
+
+.socials-link:hover .socials-icon,
+.socials-link:focus .socials-icon {
+  stroke: #fd9222;
+}
+
 .logo-icon {
   margin-left: 4px;
 }
@@ -237,6 +247,14 @@ img {
 
 .hero-wrap {
   background-color: var(--main-cl-60);
+  background-image: linear-gradient(
+      rgba(17, 17, 17, 0.4),
+      rgba(17, 17, 17, 0.4)
+    ),
+    url(../images/hero-bg.jpeg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
   border-radius: 30px;
   padding: 380px 40px 40px 40px;
 }
@@ -308,6 +326,18 @@ img {
 .advantages-item {
   width: calc((100% - 2 * 88px) / 3);
 }
+
+.advantages-item-top {
+  width: 62px;
+  height: 62px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  border: 1px solid rgba(255, 255, 255, 0.5);
+  margin-bottom: 19px;
+}
+
 .advantages-subtitle {
   color: var(--white-cl);
   font-size: 18px;
@@ -403,6 +433,20 @@ img {
 .made-item {
   max-width: 452px;
   padding-left: 16px;
+  position: relative;
+}
+
+.made-item::before {
+  content: '';
+  position: absolute;
+  left: 0;
+  top: 5px;
+  width: 8px;
+  height: 8px;
+  background-color: #4c4c4c;
+  border-radius: 50%;
+  border: 1px solid #eceded;
+  /* box-shadow: inset 0 0 0 1px #eceded; */
 }
 
 .made-item:not(:last-child) {
@@ -513,8 +557,11 @@ img {
 }
 .reviews-list {
   margin-bottom: 50px;
+  display: flex;
+  gap: 28px;
 }
 .reviews-item {
+  width: calc((100% - 56px) / 3);
   border-radius: 15px;
   border: 1px solid rgba(17, 17, 17, 0.1);
   background: #fff;
