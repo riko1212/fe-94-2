@@ -419,13 +419,23 @@
           </h2>
           <ul class="bestsellers-list list">
             <li class="bestsellers-item">
-              <img
-                class="bestsellers-picture"
-                src="./images/sellers-img-1.jpeg"
-                alt="CHOCOLATE WITH NUTS"
-                width="368"
-                height="464"
-              />
+              <div class="bestsellers-cover-wrap">
+                <img
+                  class="bestsellers-picture"
+                  src="./images/sellers-img-1.jpeg"
+                  alt="CHOCOLATE WITH NUTS"
+                  width="368"
+                  height="464"
+                />
+                <div class="bestsellers-cover">
+                  <p class="bestsellers-cover-text">
+                    Chocolate with fruit is an unbeatable combination of two of
+                    the tastiest things in the world. This dessert combines
+                    delicate and aromatic chocolate with fresh and juicy fruits,
+                    creating a true poetry of taste.
+                  </p>
+                </div>
+              </div>
               <h3 class="bestsellers-name">CHOCOLATE WITH NUTS</h3>
             </li>
             <li class="bestsellers-item">
@@ -503,7 +513,11 @@
               </p>
             </li>
           </ul>
-          <button class="reviews-btn btn btn-secondary" type="button">
+          <button
+            class="reviews-btn btn btn-secondary"
+            data-modal-open
+            type="button"
+          >
             Leave a review
           </button>
         </div>
@@ -571,5 +585,13 @@
         </div>
       </div>
     </footer>
+    <div class="backdrop is-hidden" data-modal>
+      <div class="modal">
+        <button type="button" class="modal-close-btn" data-modal-close>
+          X
+        </button>
+      </div>
+    </div>
+    <script src="./js/modal.js"></script>
   </body>
 </html>
