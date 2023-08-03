@@ -534,13 +534,40 @@
             <p class="socials-caption">Social networks</p>
             <ul class="socials-list list">
               <li class="socials-item">
-                <a class="socials-link link" href="">insta</a>
+                <a
+                  class="socials-link link"
+                  href=""
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  <svg class="socials-icon light" width="24" height="24">
+                    <use href="./images/icons.svg#icon-instagram"></use>
+                  </svg>
+                </a>
               </li>
               <li class="socials-item">
-                <a class="socials-link link" href="">fb</a>
+                <a
+                  class="socials-link link"
+                  href=""
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  <svg class="socials-icon light" width="24" height="24">
+                    <use href="./images/icons.svg#icon-facebook"></use>
+                  </svg>
+                </a>
               </li>
               <li class="socials-item">
-                <a class="socials-link link" href="">twit</a>
+                <a
+                  class="socials-link link"
+                  href=""
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  <svg class="socials-icon light" width="24" height="24">
+                    <use href="./images/icons.svg#icon-twitter"></use>
+                  </svg>
+                </a>
               </li>
             </ul>
           </div>
@@ -582,10 +609,21 @@
               </li>
             </ul>
           </nav>
+          <form class="footer-form">
+            <label aria-label="footer email input" class="footer-input-label">
+              <input
+                type="email"
+                name="footer-mail"
+                class="footer-input"
+                placeholder="Enter your email"
+              />
+            </label>
+            <button type="submit" class="footer-btn btn">Subscribe</button>
+          </form>
         </div>
       </div>
     </footer>
-    <div class="backdrop" data-modal>
+    <div class="backdrop is-hidden" data-modal>
       <div class="modal">
         <button type="button" class="modal-close-btn" data-modal-close>
           X
@@ -652,17 +690,22 @@
             ></textarea>
           </div>
           <div class="modal-field">
-            <label for="user-city" class="modal-label">City</label>
-            <select
-              name="user-city"
-              id="user-city"
-              class="modal-input"
-              multiple
+            <input
+              type="checkbox"
+              id="policy"
+              name="policy"
+              value="true"
+              class="modal-check visually-hidden"
+            />
+            <label for="policy" class="modal-check-text">
+              <!-- <span>
+                <svg class="check-icon" width="10" height="10">
+                  <use href="./images/icons.svg#icon-check"></use>
+                </svg>
+              </span> -->
+              I accept the terms and conditions of the
+              <a href="" class="modal-check-link">Privacy Policy</a></label
             >
-              <option value="london">London</option>
-              <option value="paris">Paris</option>
-              <option value="novyi-rozdil">Novyi Rozdil</option>
-            </select>
           </div>
           <button type="submit" class="modal-form-btn">Send</button>
         </form>
