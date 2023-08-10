@@ -2,6 +2,15 @@
   .container {
     max-width: 365px;
   }
+
+  .btn-primary {
+    padding: 12px 28px;
+  }
+
+  .hero-btn {
+    padding: 12px 28px;
+    margin-right: 14px;
+  }
 }
 
 @media screen and (min-width: 768px) {
@@ -18,6 +27,42 @@
     line-height: 1.17;
   }
 
+  .hero-wrap {
+    padding: 670px 40px 40px;
+    background-image: linear-gradient(
+        rgba(17, 17, 17, 0.4),
+        rgba(17, 17, 17, 0.4)
+      ),
+      url(../images/hero-bg-tab.jpeg);
+  }
+  @media (min-device-pixel-ratio: 2),
+    (min-resolution: 192dpi),
+    (min-resolution: 2dppx) {
+    .hero-wrap {
+      background-image: linear-gradient(
+          rgba(17, 17, 17, 0.4),
+          rgba(17, 17, 17, 0.4)
+        ),
+        url(../images/hero-bg-tab-2x.jpeg);
+    }
+  }
+
+  .hero-title {
+    font-size: 28px;
+  }
+
+  .btn-primary {
+    padding: 14px 40px;
+  }
+
+  .hero-btn {
+    padding: 14px 40px;
+  }
+
+  .hero-down-btn {
+    margin-top: 0;
+    margin-left: auto;
+  }
   .advantages {
     padding-top: 50px;
     padding-bottom: 50px;
@@ -116,6 +161,27 @@
 
   .made-left-side {
     width: 600px;
+  }
+
+  .hero-wrap {
+    padding: 380px 40px 40px;
+    background-image: linear-gradient(
+        rgba(17, 17, 17, 0.4),
+        rgba(17, 17, 17, 0.4)
+      ),
+      url(../images/hero-bg.jpeg);
+  }
+
+  @media (min-device-pixel-ratio: 2),
+    (min-resolution: 192dpi),
+    (min-resolution: 2dppx) {
+    .hero-wrap {
+      background-image: linear-gradient(
+          rgba(17, 17, 17, 0.4),
+          rgba(17, 17, 17, 0.4)
+        ),
+        url(../images/hero-bg-2x.jpeg);
+    }
   }
 
   .advantages-item {
